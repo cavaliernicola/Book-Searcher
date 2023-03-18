@@ -27,12 +27,16 @@ Currently it supports search for `title` and `subject` of the book.
 First of all, you need Node.js installed, you can download it [here](https://nodejs.org/it/download/).
 
 1. Clone the repository
-`git clone `
+
+`git clone https://github.com/cavaliernicola/Book-Searcher.git`
 1. Install the dependencies
+
 `npm install`
 1. Build it!
+
 `npm run build`
 1. Open it in the browser
+
 `npm run open` 
 
 ## Try It!
