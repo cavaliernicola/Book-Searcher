@@ -26,18 +26,10 @@ Currently it supports search for `title` and `subject` of the book.
 ## Installation
 First of all, you need Node.js installed, you can download it [here](https://nodejs.org/it/download/).
 
-1. Clone the repository
-
-`git clone https://github.com/cavaliernicola/Book-Searcher.git`
-1. Install the dependencies
-
-`npm install`
-1. Build it!
-
-`npm run build`
-1. Open it in the browser
-
-`npm run open` 
+1. Clone the repository: `git clone https://github.com/cavaliernicola/Book-Searcher.git`
+1. Install the dependencies: `npm install`
+1. Build it!: `npm run build`
+1. Open it in the browser: `npm run open` 
 
 ## Try It!
 You can try this app [HERE](https://cheery-youtiao-ac82d3.netlify.app/)!
