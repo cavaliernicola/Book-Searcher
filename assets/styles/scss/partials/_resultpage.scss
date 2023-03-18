@@ -1,0 +1,71 @@
+.searched-book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 40px;
+    
+  .book-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    scroll-snap-align: center;
+    transition: all 0.2s;
+
+    .book-element {
+      width: 200px;
+      height: 300px;
+      border: 1px solid black;
+      background-color: rgb(205, 119, 119);
+      border-radius: 15px;
+      background-size: cover;
+      
+      .book-author {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+
+  .book-element:hover {
+    opacity: 0.8;
+  }
+
+  .book-title {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@mixin navigate-buttons-template {
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  background-image: url(../../img/icons/next-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightblue;
+  background-size: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.navigate-buttons {
+  .navigate-next {
+    right: 20px;
+    @include navigate-buttons-template;
+  }
+
+  .navigate-previous {
+    left: 20px;
+    transform: rotate(180deg);
+    @include navigate-buttons-template;
+  }
+}

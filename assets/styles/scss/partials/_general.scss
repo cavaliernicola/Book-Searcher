@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(220, 245, 215);
+}
+
+
+// Shared among all pages
+header {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .app-name {
+    font-family: "Josefin Sans";
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .app-logo {
+    display: inline-block;
+    background-image: url(../../img/icons/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 42px;
+  }
+
+  .search-logo {
+    display: inline-block;
+    background-image: url(../../img/icons/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+#preloader {
+  display: none; //block
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	overflow: hidden;
+	background: rgb(220, 245, 215);
+}
+
+#preloader:before {
+	content: "";
+	position: fixed;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	border: 6px solid white;
+	border-top-color: grey;
+	border-bottom-color: grey;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: animate-preloader 1s linear infinite;
+}
+
+
+@keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

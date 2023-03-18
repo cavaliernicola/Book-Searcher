@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicola Cavalier"/>
+    <meta name="description" content="A simle application that helps you to search books through OpenLibrary API."/>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico"/>
+
+    <title>Book Searcher</title>
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="dist/index.js" type="module" defer></script>
+
+    <meta property="og:title" content="Book Searcher"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="This is a simple app that helps you to search books through OpenLibrary API.">
+  </head>
+  <body>
+
+    <header>
+      <div class="app-logo"></div>
+      <div class="app-name">Book Searcher</div>
+      <!-- The href is empty because it's needed to reload the page -->
+      <a href="" class="search-logo"></a> 
+    </header>
+
+    <main>
+      <div class="page-headline">Find the book you are looking for!</div>
+
+      <div class="search-bar-container">
+        <div class="search-wrapper">
+          <select class="search-options" name="category" id="category">
+            <option value="subject">Subject</option>
+            <option value="title" >Title</option>
+          </select>
+          <input class="search-input" type="text" name="" id="search" placeholder="Search..." required>
+          <button class="search-button"></button>
+        </div>
+      </div>
+
+      <div class="book-examples-container">
+        <div class="book-examples">
+          <div class="book-card"><img src="assets/img/photos/book-example-4.png" alt="Book Example"></div>
+          <div class="book-card"><img src="assets/img/photos/book-example-2.png" alt="Book Example"></div>
+          <div class="book-card"><img src="assets/img/photos/book-example-3.png" alt="Book Example"></div>
+        </div>
+      </div>
+    </main> 
+
+    <div id="preloader"></div>
+
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <div class="modal" id="modal"></div>
+
+   </body>
+</html>

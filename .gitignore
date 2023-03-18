@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Build folder
+dist/
+
+# Sass compiler
+*.css.map
+
+# VsCode Settings
+.settings/
+.vscode/

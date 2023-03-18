@@ -1,0 +1,88 @@
+.page-headline {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: clamp(1.5em, 30px, 40px);
+  font-family: "Josefin Sans";
+  color: rgb(97, 94, 94);
+}
+
+// SEARCH BAR CONTENT
+.search-bar-container {
+  margin-left: 5px;
+  margin-right: 5px;
+  .search-wrapper {
+    margin-top: 5vh;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+
+    .search-options {
+      border: none;
+      color: white;
+      background-color: #29147C;
+
+      font-family: "Noto Sans";
+      font-size: 16px;
+
+      padding: 12px 30px 12px 20px;
+      
+      background-image: url(../../img/icons/expand-icon.svg);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 7px) center;
+      background-size: 14px;
+
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+
+      outline: none;
+      
+      border-radius: 0px; //Reset it on browser where it's automatically added.
+      border-top-left-radius: 40px ;
+      border-bottom-left-radius: 40px;
+    }
+
+    .search-input {
+      border: none;
+      width: 40vw;
+      font-family: "Arial";
+      font-size: 18px;
+      color: black;
+      padding-left: 10px;
+      outline: none;
+      border-radius: 0px;
+    }
+
+    .search-button {
+      border: none;
+      background-image: url(../../img/icons/search-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: white;
+      padding-right: 50px;
+      background-size: 20px;
+      border-top-right-radius: 40px ;
+      border-bottom-right-radius: 40px;
+    }
+  }
+}
+
+.book-examples-container {
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+  .book-examples {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    .book-card {
+      * {
+        border-radius: 10px;
+        transform: rotate(5deg);
+      }
+    }
+  }
+}
