@@ -22,6 +22,7 @@ Currently it supports search for `title` and `subject` of the book.
 ## Dependencies
 * [Showdownjs](https://showdownjs.com/)
 * [Webpack](https://webpack.js.org/)
+* [DOMPurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 First of all, you need Node.js installed, you can download it [here](https://nodejs.org/it/download/).
