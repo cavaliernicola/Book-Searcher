@@ -1,3 +1,4 @@
+import DOMPurify from "dompurify";
 import { baseLink } from "./constants";
 
 export function createCustomElement(type, attributes, content=null) {
@@ -6,7 +7,15 @@ export function createCustomElement(type, attributes, content=null) {
   for (let [attribute, content] of Object.entries(attributes)) {
     element.setAttribute(attribute, content);
   }
-  element.innerHTML = content;
+
+  DOMPurify.addHook('afterSanitizeAttributes', node => {
+    if ('target' in node) {
+      node.setAttribute('target', "_blank");
+      node.setAttribute('rel', 'noopener');
+    }
+  })
+
+  element.innerHTML = DOMPurify.sanitize(content);
   return element;
 }
 

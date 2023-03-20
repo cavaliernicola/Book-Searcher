@@ -3,7 +3,7 @@ import { searchButton, insertedValue, mainElement, modal, modalOverlay, selected
 import { RequestHandler } from "./requesthandler.js";
 
 const showdown  = require('showdown');
-const converter = new showdown.Converter({openLinksInNewWindow: true});
+const converter = new showdown.Converter();
 const requestHandler = new RequestHandler();
 
 // Show Page Elements Functions

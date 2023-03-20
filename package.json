@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dompurify": "^3.0.1",
     "showdown": "^2.1.0"
   },
   "devDependencies": {
